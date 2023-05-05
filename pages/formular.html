@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-RO">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formular (T2)</title>
+</head>
+
+<!-- FORMULAR -->
+<h1 style="color: #294261">Formular</h1>
+
+<!-- PASUL 1: Înregistrare client -->
+<h2 style="background-color: #d5bdaf; color: #565264">PASUL 1: Înregistrare client</h2>
+
+  <body>
+  <body style="color: #355070; background-color: #f5ebe0; font-family:verdana"></body>
+    <form action="/action_page.php" autocomplete="on">
+<!-- fieldset: background-color: #f5ebe09c -->
+      <fieldset style="background-color: #e7d8c9">
+        <legend>Date personale:</legend><br>
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" placeholder="Prenume" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" placeholder="Nume" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" placeholder="Email" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br>
+        <br>
+          <input type="submit" value="Submit">
+      </fieldset>
+    </form>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </p>
+
+<!-- PASUL 2: Selectare produs -->
+<h2 style="background-color: #d5bdaf; color: #565264">PASUL 2: Selectare produs</h2>
+    <form action="/action_page.php">
+      <fieldset style="background-color: #e7d8c9">
+        <legend>Alege o variantă: </legend><br> 
+          <label for="produse">Produs:</label>
+          <select id="produse" name="produse" required>
+            <option value="produse">Aparat foto digital</option>
+            <option value="produse">Dronă</option>
+            <option value="produse">Smartwatch</option>
+            <option value="produse">Ochelari VR</option>
+             </select>
+             <input type="submit">
+      </fieldset>
+      </form>
+    <br>
+    
+<!-- PASUL 3: Selectare gama de prețuri  -->
+<h2 style="background-color: #d5bdaf; color: #565264">PASUL 3: Selectare gama de prețuri</h2>
+    <fieldset style="background-color: #e7d8c9">
+      <legend>Alege o variantă: </legend><br>
+        <form action="/action_page.php"
+        oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0 <input type="range" id="a" name="a" value="50"> 9000
+          <br><br>
+      <input type="submit">
+    </fieldset>
+    </form>
+  <br>
+
+<!-- PASUL 4: Alege orașul  -->
+<h2 style="background-color: #d5bdaf; color: #565264">PASUL 4: Alege orașul</h2>
+    <form action="/action_page.php">
+      <fieldset style="background-color: #e7d8c9">
+        <legend>Setează <strong>adresa</strong> la care dorești să primești aparatul:</legend><br>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="orașul">București</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="orașul">Pitești</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="orașul">Brașov</label><br><br>
+            <input type="submit" value="Submit">
+      </fieldset>
+    </form> 
+  <br>
+
+<!-- PASUL 5: Alege modalitatea de livrare  -->
+<h2 style="background-color: #d5bdaf; color: #565264">PASUL 5: Alege modalitatea de livrare</h2>
+    <form action="/action_page.php">
+      <fieldset style="background-color: #e7d8c9">
+        <legend>Alege modalitatea:</legend><br>
+          <input type="checkbox" id="mod1" name="livrare1" value="Ridicare de la sediu" required>
+          <label for="vehicle1"> Ridicare de la sediu</label><br>
+          <input type="checkbox" id="mod2" name="livrare2" value="FAN Courier" required>
+          <label for="vehicle2"> FAN Courier</label><br>
+          <input type="checkbox" id="mod3" name="livrare3" value="Poșta Română" required>
+          <label for="vehicle3"> Poșta Română</label><br><br>
+          <input type="submit" value="Submit">
+    </fieldset>
+    </form> 
+   <br>
+
+<!-- PASUL 6: Setează data livrării  -->
+<h2 style="background-color: #d5bdaf; color: #565264">PASUL 6: Setează data livrării</h2>
+    <form action="/action_page.php">
+      <fieldset style="background-color: #e7d8c9">
+        <legend>Setează <strong>data</strong> livrării:</legend><br>
+          <label for="Data">Data:</label>
+          <input type="date" id="birthday" name="birthday">
+          <input type="submit" value="Submit">
+      </fieldset>
+    </form>
+        <br>
+
+<!-- PASUL 7: Atașează cartea de identitate  -->
+<h2 style="background-color: #d5bdaf; color: #565264">PASUL 7: Atașează cartea de identitate</h2>
+    <form action="/action_page.php">
+      <fieldset style="background-color: #e7d8c9">
+        <legend>Adaugă <strong>CI</strong>:</legend><br>
+          <label for="files">Select files:</label>
+          <input type="file" id="files" name="files" multiple><br>
+          <p> <b>Notă:</b> Sunt acceptate doar fișierele în format JPEG sau PNG.</p>
+          <input type="submit" value="Submit">
+      </fieldset>
+    </form>
+  <br>
+    
+<!-- PASUL 8: Mai este ceva de adăugat?  -->    
+<h2 style="background-color: #d5bdaf; color: #565264">PASUL 8: Mai este ceva de adăugat?</h2>
+    <form action="/action_page.php">
+      <fieldset style="background-color: #e7d8c9">
+        <legend>Trimite un mesaj completând cămpul de mai jos:</legend><br>
+          <textarea style="color: #b1b1b1" name="message" rows="10" cols="30" maxlength="1000" style="width:500px; height:200px;">Scrie aici mesajul tău folosind maxim 1000 de caractere.
+          </textarea>
+            <br><br>
+          <input type="submit">
+      </fieldset>
+    </form>
+
+  </body>
+</html>
